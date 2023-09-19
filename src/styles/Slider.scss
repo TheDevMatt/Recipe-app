@@ -1,0 +1,42 @@
+$slide-width: 1300px;
+$slide-height: 65vh;
+$slide-border-radius: 20px;
+$slide-margin: 20px auto;
+$slide-transition-length: 0.5s;
+$slide-animation-length: 5s;
+$opacity-inital: 0;
+$opacity-target: 1;
+
+.slide{
+    display: flex;
+    width: $slide-width;
+    height: $slide-height;
+    border:none;
+    border-radius: $slide-border-radius;
+    margin: $slide-margin;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: opacity $slide-transition-length ease-in-out;
+    animation: opacity $slide-animation-length linear infinite;
+}
+
+@keyframes opacity {
+    0%{
+        opacity: $opacity-inital;
+    }
+    8%{
+        opacity: $opacity-inital;
+    }
+    13%{
+        opacity: $opacity-target;
+    }
+    87%{
+        opacity: $opacity-target;
+    }
+    92%{
+        opacity: $opacity-inital;
+    }
+    100%{
+        opacity: $opacity-inital;
+    }
+}
