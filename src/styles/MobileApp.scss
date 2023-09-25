@@ -1,0 +1,41 @@
+$mobile-app-text-flex-basis: 33%;
+$primary-color: #FFA500;
+$mobile-app-heading-letter-spacing: 2px;
+$mobile-app-paragraph-margin: 20px 0;
+$mobile-app-image-width: 450px;
+$mobile-app-image-height: 450px;
+$mobile-app-image-border-radius:20px;
+$mobile-app-image-margin-left:25px;
+
+.mobile-app{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .mobile-app-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-basis: $mobile-app-text-flex-basis;
+    }
+
+    .mobile-app-heading{
+        color: $primary-color;
+        letter-spacing: $mobile-app-heading-letter-spacing;
+    }
+
+    .mobile-app-paragraph{
+        margin: $mobile-app-paragraph-margin;
+        text-align: center;
+    }
+
+    .mobile-app-image{
+        display: flex;
+        width: $mobile-app-image-width;
+        height: $mobile-app-image-height;
+        border:none;
+        border-radius: $mobile-app-image-border-radius;
+        margin-left: $mobile-app-image-margin-left;
+    }
+}
