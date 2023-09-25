@@ -16,6 +16,7 @@ $sidebar-content-a-color-hover:#FFA500;
     height: $navigation-sidebar-height;
     position: fixed;
     top: 0;
+    z-index: 999;
     left:$navigation-sidebar-left;
     background-color: $navigation-sidebar-background-color;
     overflow-x: hidden;
