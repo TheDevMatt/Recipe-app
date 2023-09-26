@@ -1,0 +1,76 @@
+$primary-color: #FFA500;
+$secondary-color: #fff;
+$top-picks-margin: 40px 0;
+$top-picks-h2-letter-spacing: 2px;
+$top-picks-items-gap: 1rem;
+$top-picks-image-width:320px;
+$top-picks-image-height:240px;
+$top-picks-image-border-radius:20px;
+$meal-item-opacity:0.75;
+$meal-name-tooltip-top:50%;
+$meal-name-tooltip-left:50%;
+$meal-name-tooltip-font-size: 1.2rem;
+$meal-name-tooltip-width: 100%;
+$meal-name-tooltip-padding: 5px 0;
+$meal-name-tooltip-opacity: 0;
+$show-tooltip-opacity:1;
+$meal-name-tooltip-span: 0 10px;
+
+.top-picks{
+    margin: $top-picks-margin;
+    h2{
+        text-align: center;
+        color: $primary-color;
+        letter-spacing: $top-picks-h2-letter-spacing;
+        margin: $top-picks-margin;
+    }
+
+    .top-picks-items{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        overflow-x: auto;
+        gap: $top-picks-items-gap;
+    }
+
+    .top-picks-image{
+        position: relative;
+        width: $top-picks-image-width;
+        height: $top-picks-image-height;
+        object-fit: cover;
+        border:none;
+        border-radius: $top-picks-image-border-radius;
+        cursor: pointer;
+    }
+
+    .meal-item{
+        position: relative;
+    }
+
+    .meal-item:hover{
+        opacity: $meal-item-opacity;
+    }
+    .meal-name-tooltip{
+        position: absolute;
+        width: $meal-name-tooltip-width;
+        top:$meal-name-tooltip-top;
+        left:$meal-name-tooltip-left;
+        font-size: $meal-name-tooltip-font-size;
+        cursor: pointer;
+        transform: translate(-50%,-50%);
+        background-color: rgba(0,0,0, 0.7);
+        padding: $meal-name-padding;
+        text-align: center;
+        opacity: $meal-name-tooltip-opacity;
+    }
+
+      .show-tooltip .meal-name-tooltip {
+        color: $secondary-color;
+        font-weight: bold;
+        opacity: $show-tooltip-opacity;
+      }
+
+      .meal-name-tooltip span{
+        margin: $meal-name-tooltip-span;
+      }
+}

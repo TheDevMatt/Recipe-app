@@ -3,6 +3,7 @@ import Navigation from '../Navigation/Navigation';
 import Slider from '../Slider/Slider';
 import MobileApp from '../Mobile App/MobileApp';
 import '../../styles/App.scss';
+import TopPicks from '../TopPicks/TopPicks';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Navigation/>
       <Slider/>
       <MobileApp/>
+      <TopPicks/>
     </div>
   );
 }
