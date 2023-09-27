@@ -1,0 +1,108 @@
+$primary-color: #FFA500;
+$secondary-color: #fff;
+$meals-h2-letter-spacing: 2px;
+$top-picks-margin: 40px 0;
+$meals-buttons-margin: 40px 0;
+$meal-button-border-width: 1px;
+$meal-button-margin: 0 5px;
+$meal-button-transition-length: 0.2s;
+$meal-button-border-width-hover:1px;
+$meals-items-gap: 1rem;
+$meals-image-width:320px;
+$meals-image-height:240px;
+$meals-image-border-radius:20px;
+$meal-item-opacity:0.75;
+$meal-name-tooltip-top:50%;
+$meal-name-tooltip-left:50%;
+$meal-name-tooltip-font-size: 1.2rem;
+$meal-name-tooltip-width: 100%;
+$meal-name-tooltip-padding: 5px 0;
+$meal-name-tooltip-opacity: 0;
+$show-tooltip-opacity:1;
+$meal-name-tooltip-span: 0 10px;
+$meal-button-padding:10px 40px;
+$meal-button-border-radius: 20px;
+
+.meals{
+    margin: $top-picks-margin;
+
+    h2{
+        text-align: center;
+        color: $primary-color;
+        letter-spacing: $meals-h2-letter-spacing;
+        margin: $top-picks-margin;
+    }
+
+    .meals-buttons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: $meals-buttons-margin;
+    }
+
+    .meal-button{
+        cursor: pointer;
+        padding: $meal-button-padding;
+        background-color: $primary-color;
+        border:$meal-button-border-width solid $primary-color;
+        color: $secondary-color;
+        border-radius: $meal-button-border-radius;
+        margin: $meal-button-margin;
+        transition: all $meal-button-transition-length;
+    }
+
+    .meal-button:hover{
+        background-color: $secondary-color;
+        color: #000;
+        border: $meal-button-border-width-hover solid $primary-color;
+    }
+    
+    .meals-items{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: $meals-items-gap;
+    }
+
+    .meals-image{
+        position: relative;
+        width: $meals-image-width;
+        height: $meals-image-height;
+        object-fit: cover;
+        border:none;
+        border-radius: $meals-image-border-radius;
+        cursor: pointer;
+    }
+
+    .meal-item{
+        position: relative;
+    }
+
+    .meal-item:hover{
+        opacity: $meal-item-opacity;
+    }
+    .meal-name-tooltip{
+        position: absolute;
+        width: $meal-name-tooltip-width;
+        top:$meal-name-tooltip-top;
+        left:$meal-name-tooltip-left;
+        font-size: $meal-name-tooltip-font-size;
+        cursor: pointer;
+        transform: translate(-50%,-50%);
+        background-color: rgba(0,0,0, 0.7);
+        padding: $meal-name-tooltip-padding;
+        text-align: center;
+        opacity: $meal-name-tooltip-opacity;
+    }
+
+      .show-tooltip .meal-name-tooltip {
+        color: $secondary-color;
+        font-weight: bold;
+        opacity: $show-tooltip-opacity;
+      }
+
+      .meal-name-tooltip span{
+        margin: $meal-name-tooltip-span;
+      }
+}
