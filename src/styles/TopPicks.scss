@@ -59,7 +59,7 @@ $meal-name-tooltip-span: 0 10px;
         cursor: pointer;
         transform: translate(-50%,-50%);
         background-color: rgba(0,0,0, 0.7);
-        padding: $meal-name-padding;
+        padding: $meal-name-tooltip-padding;
         text-align: center;
         opacity: $meal-name-tooltip-opacity;
     }
