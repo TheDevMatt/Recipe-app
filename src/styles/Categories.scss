@@ -1,0 +1,34 @@
+$top-picks-items-gap: 1rem;
+$top-picks-margin: 40px 0;
+$primary-color:#FFA500;
+
+.categories-container{
+    h2{
+        text-align: center;
+        color: $primary-color;
+        letter-spacing: 2px;
+        margin: $top-picks-margin;
+    }
+
+    p{
+        text-align: center;
+        margin: $top-picks-margin;
+    }
+}
+
+.categories{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow-x: auto;
+    gap: $top-picks-items-gap;
+
+    .categories-image{
+        width: 110px;
+        height: 100px;
+    }
+
+    p{
+        margin: 0;
+    }
+}
