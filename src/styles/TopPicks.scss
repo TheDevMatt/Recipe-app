@@ -25,6 +25,11 @@ $meal-name-tooltip-span: 0 10px;
         margin: $top-picks-margin;
     }
 
+    p{
+        text-align: center;
+        margin: $top-picks-margin;
+    }
+
     .top-picks-items{
         display: flex;
         justify-content: center;
