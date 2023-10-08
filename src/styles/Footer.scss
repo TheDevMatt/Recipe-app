@@ -1,0 +1,19 @@
+$primary-color: #FFA500;
+$secondary-color: #fff;
+$footer-margin-top: 100px;
+$footer-width: 100%;
+$footer-height: 5vh;
+
+.footer-container{
+    display: flex;
+    width: $footer-width;
+    height: $footer-height;
+    align-items: center;
+    justify-content: center;
+    background-color: $primary-color;
+    margin-top: $top-picks-margin-top;
+
+    p{
+        color: $secondary-color;
+    }
+}

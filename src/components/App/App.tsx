@@ -2,8 +2,11 @@ import React from 'react';
 import Navigation from '../Navigation/Navigation';
 import Slider from '../Slider/Slider';
 import MobileApp from '../Mobile App/MobileApp';
-import '../../styles/App.scss';
 import TopPicks from '../TopPicks/TopPicks';
+import Meal from '../Meal/Meal';
+import Categories from '../Categories/Categories';
+import Footer from '../Footer/Footer';
+import '../../styles/App.scss';
 
 function App() {
   return (
@@ -12,6 +15,9 @@ function App() {
       <Slider/>
       <MobileApp/>
       <TopPicks/>
+      <Meal/>
+      <Categories/>
+      <Footer/>
     </div>
   );
 }
