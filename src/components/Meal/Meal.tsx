@@ -17,6 +17,9 @@ const Meal:React.FC = () => {
     return(
         <div className='meals'>
             <h2>Meal</h2>
+            <p>
+            Browse through different types of meals and choose your desired repast.
+            </p>
             <div className='meals-buttons'>
             <Button className='meal-button' onClick={() => setCategory(mealData)}>All</Button>
             <Button className='meal-button' onClick={() => handleCategory("Pizza")}>Pizza</Button>

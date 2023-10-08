@@ -33,6 +33,11 @@ $meal-button-border-radius: 20px;
         margin: $top-picks-margin;
     }
 
+    p{
+        text-align: center;
+        margin: $top-picks-margin;
+    }
+
     .meals-buttons{
         display: flex;
         justify-content: center;
