@@ -1,3 +1,4 @@
+$primary-color: #FFA500;
 $navigation-sidebar-width: 200px;
 $navigation-sidebar-height: 100%;
 $navigation-sidebar-left: -250px;
@@ -8,8 +9,9 @@ $sidebar-content-color: white;
 $sidebar-content-a-color: white;
 $sidebar-content-a-margin: 20px 0;
 $sidebar-content-a-transition: 0.25s;
+$sidebar-close-transition: 0.15s;
 $sidebar-content-a-color:white;
-$sidebar-content-a-color-hover:#FFA500;
+$sidebar-content-hover:black;
 
 .navigation-sidebar {
     width: $navigation-sidebar-width;
@@ -18,7 +20,7 @@ $sidebar-content-a-color-hover:#FFA500;
     top: 0;
     z-index: 999;
     left:$navigation-sidebar-left;
-    background-color: $navigation-sidebar-background-color;
+    background-color: $primary-color;
     overflow-x: hidden;
     transition: left $navigation-sidebar-transition-length ease-in-out;
     padding-top: $navigation-sidebar-padding-top;
@@ -43,11 +45,16 @@ $sidebar-content-a-color-hover:#FFA500;
       transition: color $sidebar-content-a-transition;
       
       &:hover {
-        color:$sidebar-content-a-color-hover;
+        color:$sidebar-content-hover;
       }
     }
 
     .sidebar-close{
       cursor: pointer;
+      transition: color $sidebar-close-transition ease-in-out;
+
+      &:hover{
+        color: $sidebar-content-hover;
+      }
     }
   }
