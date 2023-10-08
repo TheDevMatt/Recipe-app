@@ -1,18 +1,21 @@
-$top-picks-items-gap: 1rem;
-$top-picks-margin: 40px 0;
+$categories-items-gap: 1rem;
+$categories-letter-spacing: 2px;
+$categories-margin: 40px 0;
 $primary-color:#FFA500;
+$categories-image-width: 110px;
+$categories-image-height: 100px;
 
 .categories-container{
     h2{
         text-align: center;
         color: $primary-color;
-        letter-spacing: 2px;
-        margin: $top-picks-margin;
+        letter-spacing: $categories-letter-spacing;
+        margin: $categories-margin;
     }
 
     p{
         text-align: center;
-        margin: $top-picks-margin;
+        margin: $categories-margin;
     }
 }
 
@@ -21,14 +24,10 @@ $primary-color:#FFA500;
     justify-content: center;
     flex-wrap: wrap;
     overflow-x: auto;
-    gap: $top-picks-items-gap;
+    gap: $categories-items-gap;
 
     .categories-image{
-        width: 110px;
-        height: 100px;
-    }
-
-    p{
-        margin: 0;
+        width: $categories-image-width;
+        height: $categories-image-height;
     }
 }
